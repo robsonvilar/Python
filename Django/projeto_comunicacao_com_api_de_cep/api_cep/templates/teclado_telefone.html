@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Entrada teclado</title>
+</head>
+<body>
+    <!-- teclado_telefone.html -->
+    <form method="post" action="{% url 'teclado_telefone' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Ligar</button>
+    </form>
+</body>
+</html>
